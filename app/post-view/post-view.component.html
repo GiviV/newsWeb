@@ -1,0 +1,13 @@
+<a [routerLink]="['/post', post.id]" >
+
+
+    <div class="cateogry_post" [hoverColor]="post.category == 'მსოფლიო' ? 'black' : 'grey'" appHoverPost >
+
+        <img [src]="post.coverImg" alt="">
+        <div>
+            <p>{{post.time}}</p>
+            <h5>{{post.title}}</h5>
+        </div>
+    </div>
+
+</a>

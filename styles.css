@@ -1,0 +1,162 @@
+/* You can add global styles to this file, and also import other style files */
+/* Reset CSS */
+
+/* Box model */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Remove default margin and padding */
+  html, body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Set default font and font size */
+  body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+  }
+  
+  /* Remove list styles */
+  ul, ol {
+    list-style: none;
+  }
+  
+  /* Remove default link styles */
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* Remove default table styles */
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  
+  /* Remove default image styles */
+  img {
+    border: none;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Remove default fieldset styles */
+  fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Remove default legend styles */
+  legend {
+    font-size: 1em;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Remove default button styles */
+  button {
+    border: none;
+    padding: 0;
+    margin: 0;
+    background: none;
+    font: inherit;
+    cursor: pointer;
+  }
+  
+  /* Remove default input styles */
+  input {
+    border: none;
+    padding: 0;
+    margin: 0;
+    font: inherit;
+  }
+  
+  /* Remove default textarea styles */
+  textarea {
+    border: none;
+    padding: 0;
+    margin: 0;
+    font: inherit;
+    resize: vertical;
+  }
+  
+  /* Remove default select styles */
+  select {
+    border: none;
+    padding: 0;
+    margin: 0;
+    font: inherit;
+  }
+html, body { height: 100%; }
+body {
+    background-color: #F5F5F5; 
+    font-family: 'Noto Sans Georgian', sans-serif;
+} 
+
+.mat-mdc-tab-header {
+  position: absolute !important;
+  bottom: 0;
+  z-index: 2;
+  width: 100%;
+}
+
+.mat-tab {
+  background-size: cover !important;
+} 
+
+.mat-mdc-tab-body-content img {
+
+}
+.mat-mdc-tab-body-wrapper {
+  height: 100% !important;
+}
+
+.mat-mdc-tab-group {
+  height: 60vh;
+}
+.mat-mdc-tab-header {
+  background-color: rgba(0, 0, 0, 0.476);
+  backdrop-filter: blur(6px);
+}
+mat-tab-group {
+  position: relative;
+}
+
+.mdc-tab__text-label {
+  color: #f5f5f5b8 !important;
+}
+
+.mat-mdc-tab.mdc-tab--active .mdc-tab-indicator__content--underline {
+  border-color: #f5f5f574 !important ;
+  border-width: 3px !important;
+}
+
+.mat-mdc-tab.mdc-tab {
+  transition: 0.3s;
+}
+
+
+.mat-mdc-tab-header-pagination-chevron {
+  border-color: #f5f5f5 !important;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 16px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #6e000f; 
+  
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #3d0008; 
+}

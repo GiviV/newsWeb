@@ -1,0 +1,23 @@
+.go-to-top {
+    position: fixed;
+    bottom: 36px;
+    right: 54px;
+    background-color: #1A3A60; /* Change this to any color you like */
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 5px 15px;
+    font-size: 24px;
+    cursor: pointer;
+    transition: 0.4s;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  .go-to-top.show {
+    display: inline-block !important; /* Show when the button becomes visible */
+  }
+  
+  .hidden {
+    opacity: 0;
+    cursor: context-menu;
+  }

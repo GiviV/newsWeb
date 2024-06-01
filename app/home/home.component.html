@@ -1,0 +1,31 @@
+<mat-tab-group>
+  <ng-container *ngFor="let post of mainPost | slice:0:10; let i = index">
+    <mat-tab [label]="'' + (i + 1)">
+
+      <div class="slider_post" [style]="{backgroundImage: 'url(' + post.coverImg + ')'}">
+        <div class="post_content">
+          <div>
+            <h2>{{post.title}}</h2>
+            <p>{{post.text}}</p>
+          </div>
+        </div>
+      </div>
+    </mat-tab>
+  </ng-container>
+</mat-tab-group>
+
+
+<section class="featured_news">
+
+  <div *ngFor="let post of mainPost" class="featured_post">
+    <div class="post_content">
+     
+      <p>{{post.category}}</p>
+      <h4>{{post.title}}</h4>
+      <span>{{post.text | slice:0:200}}...</span>
+      <span>{{post.time}}</span>
+    </div>
+    <img [src]="post.coverImg" alt="">
+  </div>
+
+</section>
